@@ -1,0 +1,10 @@
+<body class="pricing">
+  <div class="container py-5">
+    <div class="row mx-5 my-5">
+      <div class="row row-cols-1 row-cols-md-3 mb-3">
+        <app-card *ngFor="let item of plans" [planObj]="item">
+        </app-card>
+      </div>
+    </div>
+  </div>
+</body>

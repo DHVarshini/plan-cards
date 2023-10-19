@@ -1,0 +1,13 @@
+ul {
+    list-style: none;
+}
+
+.tick:before {
+    margin-right: 5px;
+    content: '✓';
+}
+
+.cross:before {
+    margin-right: 5px;
+    content: 'x';
+}

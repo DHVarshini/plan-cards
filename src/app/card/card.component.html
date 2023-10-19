@@ -1,0 +1,14 @@
+<div class="card mb-4 mb-lg-0">
+    <div class="card-body">
+        <h5 class="card-title text-muted text-uppercase text-center">{{planObj?.plan}}</h5>
+        <h6 class="card-price text-center">${{planObj?.price}}<span class="period">/month</span></h6>
+        <hr>
+        <ul class="fa-ul">
+            <li *ngFor="let item of planObj?.features" [ngClass]="{'text-muted cross': !item.isEnabled, 'tick': item.isEnabled}">
+          {{item.name}}
+        </ul>
+        <div class="d-grid">
+            <a href="#" class="btn btn-primary text-uppercase">Button</a>
+        </div>
+    </div>
+</div>
